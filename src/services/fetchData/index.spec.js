@@ -3,7 +3,6 @@ import sinon from 'sinon'
 import config from '../../../src/config'
 import services from '../../../src/services'
 import 'isomorphic-fetch'
-import { setTimeout } from 'timers';
 
 describe('Given the `fetchData` service', () => {
     describe('when invoked', () => {
