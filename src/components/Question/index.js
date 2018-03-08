@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-const Question (props) => {
+const Question = (props) => {
     return (props.questionRenderer)
 }
 
