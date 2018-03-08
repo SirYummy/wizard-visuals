@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "predeploy":"yarn run build",
     "deploy":"gh-pages -d build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/index.js",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
