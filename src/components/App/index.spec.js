@@ -22,8 +22,5 @@ describe(`App`, () => {
             expect(component.find(Question)).to.have.length(1)
         })
 
-        it('renders the question as an `h3`', () => {
-            expect(component.find(Question).dive().find('h3')).to.have.length(1)
-        })
     })
 })
