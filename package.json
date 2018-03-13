@@ -11,16 +11,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy":"yarn run build",
-    "deploy":"gh-pages -d build",
-    "test": "react-scripts test --env=jsdom",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --env=jsdom --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/index.js",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "code": "^5.2.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "sinon": "^4.4.2",
-    "gh-pages": "^1.1.0"
+    "gh-pages": "^1.1.0",
+    "sinon": "^4.4.2"
   }
 }

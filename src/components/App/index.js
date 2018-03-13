@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
+import ChartIntent from '../ChartIntent'
+import QuestionList from '../QuestionList'
 
-export default (props) => {
-    return (
-        <div>Inside <code>App</code> component</div>
-    )
+class App extends Component {
+    
+    render(props) {
+        return (
+            <div>
+                <code>wizard-visuals</code>
+                <ChartIntent />
+                <QuestionList />        
+            </div>
+        )
+    }
 }

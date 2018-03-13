@@ -16,5 +16,14 @@ describe(`App`, () => {
         it('renders a `div`', () => {
             expect(component.type()).to.equal('div')
         })
+
+        it('contains a `QuestionList`', () => {
+            expect(component.find(`QuestionList`)).to.have.length(1)
+        })
+
+        it(`also contains a \`ChartIntent\``, () => {
+            expect(component.find(`ChartIntent`)).to.have.length(1)
+        })
+
     })
 })
