@@ -1,12 +1,16 @@
-import React from 'react'
-import Question from '../Question'
+import React, { Component } from 'react'
+import ChartIntent from '../ChartIntent'
+import QuestionList from '../QuestionList'
 
-export default (props) => {
+class App extends Component {
     
-    return (
-        <div>
-            <code>wizard-visuals</code>
-            <Question questionId='question-1' />        
-        </div>
-    )
+    render(props) {
+        return (
+            <div>
+                <code>wizard-visuals</code>
+                <ChartIntent />
+                <QuestionList />        
+            </div>
+        )
+    }
 }

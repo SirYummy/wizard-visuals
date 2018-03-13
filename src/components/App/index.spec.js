@@ -3,7 +3,6 @@ import { expect } from 'code'
 import sinon from 'sinon'
 import { shallow } from 'enzyme'
 import App from './index'
-import Question from '../Question'
 
 describe(`App`, () => {
     describe('when it mounts', () => {
@@ -18,8 +17,12 @@ describe(`App`, () => {
             expect(component.type()).to.equal('div')
         })
 
-        it('contains a `Question`', () => {
-            expect(component.find(Question)).to.have.length(1)
+        it('contains a `QuestionList`', () => {
+            expect(component.find(`QuestionList`)).to.have.length(1)
+        })
+
+        it(`also contains a \`ChartIntent\``, () => {
+            expect(component.find(`ChartIntent`)).to.have.length(1)
         })
 
     })
